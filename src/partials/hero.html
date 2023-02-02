@@ -1,0 +1,233 @@
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="container hero__container">
+    <div class="hero__main">
+      <h1 class="hero__title hero__title--white">
+        ice cream made with
+        <span class="hero__title hero__title--pink">passion</span>
+      </h1>
+      <ul class="department__list page-count">
+        <li class="department__item">
+          <p data-digits-counter class="department__number">16</p>
+          <p class="department__kind">cafes</p>
+        </li>
+        <li class="department__item">
+          <p data-digits-counter class="department__number">23</p>
+          <p class="department__kind">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="hero__list">
+      <li class="hero__item">
+        <a href="#products" data-scroll="#products" class="btn btn--sm"
+          >Products</a
+        >
+      </li>
+      <li class="hero__item">
+        <a href="#about" data-scroll="#about" class="btn btn--sm btn--reverse"
+          >How it’s made?</a
+        >
+      </li>
+    </ul>
+    <div class="hero__info">
+      <p class="hero__text">
+        For the production of organic ice cream, we use only organic dairy
+        products of our own production, and comply with all the necessary rules.
+      </p>
+      <button
+        type="button"
+        id="open-video-modal"
+        class="btn-round btn-round--sm btn--reverse btn--with-icon"
+        aria-label="More information"
+        data-green-magic
+      >
+        <svg class="btn__icon">
+          <use href="./images/icons-sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <picture>
+      <source
+        srcset="
+          ./images/hero/milk-desk-lime.png   1x,
+          ./images/hero/milk-desk-lime@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/milk-tab-lime.png   1x,
+          ./images/hero/milk-tab-lime@2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--milk hero__img--green"
+        src="./images/hero/milk-desk-lime.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/milk-desk-peach.png   1x,
+          ./images/hero/milk-desk-peach@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/milk-tab-peach.png   1x,
+          ./images/hero/milk-tab-peach@2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--milk hero__img--coffee"
+        src="./images/hero/milk-desk-peach.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/milk-desk.png   1x,
+          ./images/hero/milk-desk@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/hero/milk-tab.png 1x, ./images/hero/milk-tab@2.png 2x"
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--milk"
+        src="./images/hero/milk-desk.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+
+    <map class="map" name="schemes">
+      <area
+        class="schemes__circle--coffee"
+        shape="rect"
+        alt="Green magic"
+        data-coffee-magic
+      />
+      <area
+        class="schemes__circle--green"
+        shape="rect"
+        alt="Coffee magic"
+        data-green-magic
+      />
+      <area
+        class="schemes__circle--pink"
+        shape="rect"
+        alt="Pink magic"
+        data-pink-magic
+      />
+    </map>
+
+    <picture>
+      <source
+        srcset="
+          ./images/hero/ice-cream-desk.png   1x,
+          ./images/hero/ice-cream-desk@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-tab.png   1x,
+          ./images/hero/ice-cream-tab@2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-mob.png   1x,
+          ./images/hero/ice-cream-mob@2.png 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img
+        class="hero__img--ice-cream"
+        src="./images/hero/ice-cream-mob.png"
+        alt="ice-cream"
+        width="171"
+        usemap="#schemes"
+      />
+    </picture>
+
+    <div class="hero__img--prompt">Click me!</div>
+
+    <span class="hero__circle"></span>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/girl-desk-lime.png   1x,
+          ./images/hero/girl-desk-lime@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/girl-tab-lime.png   1x,
+          ./images/hero/girl-tab-lime@2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--girl hero__img--green"
+        src="./images/hero/girl-desk-lime.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/girl-desk-peach.png   1x,
+          ./images/hero/girl-desk-peach@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/girl-tab-peach.png   1x,
+          ./images/hero/girl-tab-peach@2.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--girl hero__img--coffee"
+        src="./images/hero/girl-desk-peach.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/girl-desk.png   1x,
+          ./images/hero/girl-desk@2.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/hero/girl-tab.png 1x, ./images/hero/girl-tab@2.png 2x"
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero__img--girl"
+        src="./images/hero/girl-desk.png"
+        alt="ice-cream"
+        width="171"
+      />
+    </picture>
+  </div>
+</section>

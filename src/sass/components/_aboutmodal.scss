@@ -1,0 +1,17 @@
+.aboutmodal__text {
+  font-family: var(--font-main);
+  @include font(500, 12px, 1.62, 0);
+  color: var(--text-color-accent);
+  text-align: justify;
+  text-indent: 20px;
+  @include tablet() {
+    @include font(500, 14px, 1.76, 0.03em);
+  }
+  @include desktop() {
+    line-height: 1.94;
+  }
+}
+
+.aboutmodal__img {
+  margin: 5px auto 0;
+}

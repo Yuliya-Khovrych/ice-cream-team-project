@@ -1,0 +1,130 @@
+.logo {
+    fill: var(--primary-color);
+    height: 50px;
+    width: 150px;
+
+    .header.fixed & {
+        height: 35px;
+        width: 105px;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header.fixed {
+    position: fixed;
+    background-color: var(--bg-color);
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include mobile-only() {
+        justify-content: space-between;
+    }
+    @include tablet() {
+        padding-top: 32px;
+    }
+    @include desktop() {
+        justify-content: space-between;
+        padding-top: 37px;
+    }
+
+    & .header__btn-buy {
+        @include mobile-only() {
+            display: none;
+        }
+    }
+}
+.header.fixed .header-wrapper {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.header__btn-open {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    @include tablet() {
+        margin-right: 32px;
+        margin-left: auto;
+    }
+    @include desktop() {
+        display: none;
+    }
+}
+
+.desktop-nav {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.header__icon-btn {
+    stroke: var(--primary-color);
+}
+
+.desktop-nav__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.header__btn-buy {
+    animation-name: shadow-drop-center;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @include desktop() {
+        cursor: pointer;
+    }
+
+    &--mobile {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        min-width: 209px;
+
+        @include desktop() {
+            display: none;
+        }
+    }
+}
+
+.header.fixed .header__btn-buy--fixed {
+    min-width: 114px;
+    min-height: 34px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    font-size: 12px;
+}
+
+.desktop-nav__item {
+    display: inline;
+}
+
+.desktop-nav__link {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #fff;
+
+    transition: color var(--transition-prop);
+
+    &:focus,
+    &:hover,
+    &.active {
+        color: var(--primary-color);
+    }
+}

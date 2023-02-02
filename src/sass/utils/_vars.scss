@@ -1,0 +1,40 @@
+:root {
+  --font-main: "DM Sans", sans-serif;
+  --font-accent: "Titan One", cursive;
+  --font-size: 16px;
+
+  --text-color-main: #000;
+  --text-color-accent: #907e82;
+  --text-color-light: #ffffff;
+
+  --primary-color: #d41443;
+  --accent-color: #ffa5ba;
+
+  --btn-primary-color: #d41342;
+  --btn-accent-color: #ecebeb;
+  --btn-hero-color: #f15277;
+
+  --bg-color: #ffb8ca;
+  --bg-menu-color: #e17992;
+  --line-menu-color: #e18298;
+  --icon-bg-color: #fea5bb;
+  --bg-color-light: #fff5f6;
+  --bg-color-shadow: rgba(255, 184, 202, 0.2);
+  --product-color-first: #ffb8ca;
+  --product-color-second: #f0d1a5;
+  --product-color-third: #c2e297;
+
+  --card-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.2),
+    0px -5px 10px -5px rgba(34, 60, 80, 0.2);
+
+  --gutter: 32px;
+  --gutter-mob: 20px;
+  --section-padding: 60px;
+
+  --transition-prop: 0.25s ease;
+}
+
+//@mixin doesn't see other variables
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;

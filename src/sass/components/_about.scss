@@ -1,0 +1,140 @@
+.about {
+  padding-top: var(--section-padding);
+  background-color: var(--bg-color-light);
+  position: relative;
+
+  @include tablet() {
+    padding-bottom: 0;
+  }
+}
+
+.about .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about::before {
+  @include desktop() {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url(../images/about/milk-bg-desk.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right 240px;
+
+    @include retina() {
+      background-image: url(../images/about/milk-bg-desk@2.png);
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  @include tablet-only() {
+    margin-bottom: 40px;
+  }
+  @include desktop() {
+    margin-bottom: 60px;
+  }
+}
+
+.about__wrap {
+  min-width: 280px;
+
+  @include tablet() {
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+  }
+}
+.about__column img {
+  margin: 0 auto;
+  position: absolute;
+}
+
+.about__img--coffee,
+.about__img--green {
+  opacity: 0;
+}
+
+.about__column--first {
+  margin-bottom: 40px;
+
+  @include mobile-only() {
+    min-height: 279px;
+  }
+
+  @include tablet-only() {
+    min-width: 336px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+  @include desktop() {
+    min-width: 501px;
+    margin-right: 99px;
+    margin-bottom: 0;
+  }
+}
+.about__column--second {
+  @include mobile-only() {
+    padding-right: 60px;
+
+    background-image: url(../images/about/milk-bg-mob.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right 25%;
+
+    @include retina() {
+      background-image: url(../images/about/milk-bg-mob@2.png);
+    }
+  }
+
+  @include desktop() {
+    padding-top: 90px;
+    padding-right: 105px;
+  }
+}
+.about__paragraph {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  font-family: var(--font-main);
+
+  @include tablet() {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+
+.about__paragraph--first {
+  color: var(--text-color-main);
+  margin-bottom: 32px;
+
+  @include desktop() {
+    font-size: 16px;
+  }
+}
+
+.about__paragraph--second {
+  color: var(--text-color-accent);
+  margin-bottom: 20px;
+
+  @include tablet() {
+    margin-bottom: 40px;
+  }
+  @include desktop() {
+    line-height: 1.94;
+  }
+}
+.about__ending {
+  display: block;
+  margin-top: 15px;
+}
